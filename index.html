@@ -108,6 +108,14 @@
     color:var(--ink);
   }
   ul.bullets li{margin-bottom:4px;}
+  .pub-list, .patent-list{
+    margin:0;
+    padding-left:20px;
+  }
+  .pub-list li, .patent-list li{
+    margin-bottom:8px;
+  }
+  .venue{color:var(--muted);font-size:13px;}
   footer{
     margin-top:40px;
     text-align:center;
@@ -133,31 +141,34 @@
     <header>
       <div>
         <h1>刘云飞</h1>
-        <p class="title">[你的职位 / 一句话定位，例如：后端开发工程师]</p>
+        <p class="title">高级工程师 · 航天地面数据系统技术 / 空间应用大数据智能分析</p>
       </div>
       <div class="contact">
         <div>liuyunfei2026@gmail.com</div>
         <div><a href="https://github.com/lyf-wxy" target="_blank">github.com/lyf-wxy</a></div>
-        <div>[城市] · [电话，可选]</div>
+        <div>中国科学院空间应用工程与技术中心</div>
       </div>
     </header>
 
     <section>
       <h2>个人简介</h2>
       <p class="summary">
-        [用 2-3 句话概括你的背景、核心能力和职业目标。例如：5 年后端开发经验，专注于高并发系统设计，
-        熟悉 Go / Java 技术栈，对分布式系统与性能优化有深入实践。]
+        计算机应用技术专业博士，现就职于中国科学院空间应用工程与技术中心工程信息中心。长期从事航天地面数据系统研制与空间应用大数据智能分析工作，
+        作为核心技术骨干 / 副主任设计师，主持并参与天宫二号、中国空间站等多个载人航天型号任务的地面数据系统设计、研制与运行保障，
+        在知识图谱构建、多模态融合分析、领域大模型与智能体应用等方向取得多项原创性成果。发表 SCI/EI 论文 30 余篇，授权 / 受理专利 17 项，
+        主导编制载人航天工程专项标准 3 项，出版专著 1 部。
       </p>
     </section>
 
     <section>
-      <h2>技能</h2>
+      <h2>研究方向</h2>
       <div class="skills">
-        <span class="skill">技能 1</span>
-        <span class="skill">技能 2</span>
-        <span class="skill">技能 3</span>
-        <span class="skill">技能 4</span>
-        <span class="skill">技能 5</span>
+        <span class="skill">航天地面数据系统设计与研制</span>
+        <span class="skill">空间应用大数据智能分析</span>
+        <span class="skill">知识图谱构建</span>
+        <span class="skill">多模态融合学习</span>
+        <span class="skill">领域大模型 / 智能体应用</span>
+        <span class="skill">云原生分布式系统</span>
       </div>
     </section>
 
@@ -165,40 +176,25 @@
       <h2>工作经历</h2>
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-role">[职位名称]</span>
-          <span class="entry-date">[起止时间，例如 2022.03 - 至今]</span>
+          <span class="entry-role">工程师 / 项目高级工程师（副主任设计师）</span>
+          <span class="entry-date">2016.07 - 至今</span>
         </div>
-        <div class="entry-org">[公司名称]</div>
+        <div class="entry-org">中国科学院空间应用工程与技术中心 · 工程信息中心</div>
         <ul class="bullets">
-          <li>[负责的核心工作或系统]</li>
-          <li>[用数据说明的成果，例如：将接口响应时间优化 40%]</li>
-          <li>[团队协作 / 带人 / 技术选型等经历]</li>
+          <li>作为副主任设计师，主持 / 参与天宫二号、中国空间站等载人航天多型号任务地面数据系统的设计、研制与运行保障</li>
+          <li>主持国家重大科技专项子课题 2 项、载人航天工程预研项目 2 项，参与国家重大科技专项、装备预研等项目 20 余项</li>
+          <li>提出领域知识图谱构建、多模态融合分析、领域大模型与智能体应用等系列算法，推动工程任务决策与科学数据应用</li>
+          <li>主导编制并发布载人航天工程专项标准 3 项</li>
         </ul>
       </div>
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-role">[职位名称]</span>
-          <span class="entry-date">[起止时间]</span>
+          <span class="entry-role">软件工程师</span>
+          <span class="entry-date">2013.07 - 2014.09</span>
         </div>
-        <div class="entry-org">[公司名称]</div>
+        <div class="entry-org">中国科学院地理科学与资源研究所</div>
         <ul class="bullets">
-          <li>[工作内容 1]</li>
-          <li>[工作内容 2]</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>项目经历</h2>
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-role">[项目名称]</span>
-          <span class="entry-date">[时间]</span>
-        </div>
-        <ul class="bullets">
-          <li>[项目背景与你的角色]</li>
-          <li>[使用的技术栈]</li>
-          <li>[结果 / 影响]</li>
+          <li>从事地理信息系统相关软件研发工作</li>
         </ul>
       </div>
     </section>
@@ -207,11 +203,75 @@
       <h2>教育背景</h2>
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-role">[学校名称]</span>
-          <span class="entry-date">[起止时间]</span>
+          <span class="entry-role">中国科学院大学</span>
+          <span class="entry-date">2020.09 - 2025.06</span>
         </div>
-        <div class="entry-org">[专业 / 学位]</div>
+        <div class="entry-org">计算机应用技术 · 博士研究生</div>
       </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">北京林业大学</span>
+          <span class="entry-date">2014.09 - 2016.06</span>
+        </div>
+        <div class="entry-org">地理信息系统 · 硕士研究生</div>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">北京林业大学</span>
+          <span class="entry-date">2009.09 - 2013.07</span>
+        </div>
+        <div class="entry-org">计算机科学与技术 · 学士</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>代表性论文</h2>
+      <ul class="pub-list">
+        <li>
+          Fine-Grained Multi-modal Prompt Learning for Vision-Language Models
+          <div class="venue">Neurocomputing（SCI）· 2025 · 第一作者</div>
+        </li>
+        <li>
+          SSuieBERT: Domain Adaptation Model for Chinese Space Science Text Mining and Information Extraction
+          <div class="venue">Electronics（SCI）· 2024 · 第一作者</div>
+        </li>
+        <li>
+          MR4SseC: A Multimodal Representation Learning Framework for Space Science Experiment of China's Space Station
+          <div class="venue">ACM International Conference on Multimedia Retrieval, ICMR（EI）· 2025 · 第一作者</div>
+        </li>
+        <li>
+          Enhance Document-Level Event Argument Extraction Through Text Diffusion and Event Argument Constraints
+          <div class="venue">IEEE International Conference on Computer Supported Cooperative Work in Design, CSCWD（EI）· 2025 · 第一作者</div>
+        </li>
+        <li>
+          SSUIE 1.0: A Dataset for Chinese Space Science and Utilization Information Extraction
+          <div class="venue">Natural Language Processing and Chinese Computing, NLPCC（EI）· 2023 · 第一作者</div>
+        </li>
+        <li>
+          EicDB: A Cloud Native Distributed Relational Database Based on Shared Storage
+          <div class="venue">International Conference on Software Engineering and Information Management, ICSEIM（EI）· 2024 · 第一作者</div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>代表性专利</h2>
+      <ul class="patent-list">
+        <li>基于视觉语言预训练模型的细粒度多模态提示学习方法（发明专利，第一发明人）</li>
+        <li>一种航天工程大数据挖掘与分析方法及系统（发明专利，第一发明人）</li>
+        <li>航天工程业务运行日志管理与监控告警方法及系统（发明专利，第一发明人）</li>
+        <li>用于电子设备的航天工程大数据知识图谱图形用户界面（外观设计专利，第一发明人）</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>荣誉奖励</h2>
+      <ul class="bullets">
+        <li>军队科技进步奖 二等奖（团队）</li>
+        <li>"空间实验室先进地面数据处理与服务技术系统" 省部级科技奖 二等奖（团队）</li>
+        <li>2018-2023、2025 年度中心优秀员工</li>
+        <li>2019 年度中心潜龙英才计划</li>
+      </ul>
     </section>
 
     <footer>
