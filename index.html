@@ -39,6 +39,19 @@
     padding-bottom:20px;
     margin-bottom:28px;
   }
+  .header-main{
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
+  .avatar{
+    width:88px;
+    height:88px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+    border:2px solid var(--line);
+  }
   h1{
     margin:0 0 6px;
     font-size:32px;
@@ -153,9 +166,12 @@
 <body>
   <div class="page">
     <header>
-      <div>
-        <h1>刘云飞</h1>
-        <p class="title">高级工程师 · 航天地面数据系统技术 / 空间应用大数据智能分析</p>
+      <div class="header-main">
+        <img class="avatar" src="avatar.png" alt="刘云飞">
+        <div>
+          <h1>刘云飞</h1>
+          <p class="title">高级工程师 · 航天地面数据系统技术 / 空间应用大数据智能分析</p>
+        </div>
       </div>
       <div class="contact">
         <div>liuyunfei2026@gmail.com</div>
