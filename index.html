@@ -119,6 +119,17 @@
   .pub-title{font-weight:600;font-size:15px;margin-bottom:3px;}
   .pub-authors{font-size:13.5px;color:var(--ink);margin-bottom:3px;}
   .pub-authors strong{color:var(--accent);}
+  .rank-label{
+    font-size:12px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin:16px 0 8px;
+    padding-bottom:4px;
+    border-bottom:1px dashed var(--line);
+  }
+  .rank-label:first-child{margin-top:0;}
+  .pub-list, .patent-list{list-style:none;}
   footer{
     margin-top:40px;
     text-align:center;
@@ -280,37 +291,52 @@
 
     <section>
       <h2>代表性论文</h2>
+      <p class="venue" style="margin-bottom:12px;">已发表论文 30 余篇，其中第一作者 8 篇，列举如下</p>
+      <div class="rank-label">第一作者</div>
       <ul class="pub-list">
-        <li>
-          <div class="pub-title">MR4SseC: A Multimodal Representation Learning Framework for Space Science Experiment of China's Space Station</div>
-          <div class="pub-authors"><strong>Yunfei Liu</strong>, Anqi Liu, Yanan Liu, Yunziwei Deng, Yizhao Wang, Shengyang Li</div>
-          <div class="venue">2025 ACM International Conference on Multimedia Retrieval（ICMR，EI）· 2025</div>
-        </li>
         <li>
           <div class="pub-title">Fine-Grained Multi-modal Prompt Learning for Vision-Language Models</div>
           <div class="pub-authors"><strong>Yunfei Liu</strong>, Yunziwei Deng, Anqi Liu, Yanan Liu, Shengyang Li</div>
-          <div class="venue">Neurocomputing（SCI）· 2025</div>
+          <div class="venue">Neurocomputing（SCI，IF 6.5）· 2025</div>
         </li>
         <li>
-          <div class="pub-title">EicDB: A Cloud Native Distributed Relational Database Based on Shared Storage</div>
-          <div class="pub-authors"><strong>Yunfei Liu</strong>, Shengyang Li, Yunziwei Deng, Chen Du</div>
-          <div class="venue">2025 the 8th International Conference on Software Engineering and Information Management（EI）· 2025</div>
+          <div class="pub-title">Image Captioning for Life Ecological Experiment of China's Space Station</div>
+          <div class="pub-authors"><strong>Yunfei Liu</strong>, Yizhao Wang, Chen Du, Yunziwei Deng, Anqi Liu, Yanan Liu, Shengyang Li</div>
+          <div class="venue">Complex &amp; Intelligent Systems（SCI，IF 5.1）· 2025</div>
         </li>
         <li>
           <div class="pub-title">SSuieBERT: Domain Adaptation Model for Chinese Space Science Text Mining and Information Extraction</div>
           <div class="pub-authors"><strong>Yunfei Liu</strong>, Shengyang Li, Yunziwei Deng, Shiyi Hao, Linjie Wang</div>
-          <div class="venue">Electronics（SCI）· 2024</div>
+          <div class="venue">Electronics（SCI，IF 2.6）· 2024</div>
+        </li>
+        <li>
+          <div class="pub-title">MR4SseC: A Multimodal Representation Learning Framework for Space Science Experiment of China's Space Station</div>
+          <div class="pub-authors"><strong>Yunfei Liu</strong>, Anqi Liu, Yanan Liu, Yunziwei Deng, Yizhao Wang, Shengyang Li</div>
+          <div class="venue">2025 ACM International Conference on Multimedia Retrieval（ICMR，CCF-B）· 2025</div>
         </li>
         <li>
           <div class="pub-title">SSUIE 1.0: A Dataset for Chinese Space Science and Utilization Information Extraction</div>
           <div class="pub-authors"><strong>Yunfei Liu</strong>, Shengyang Li, Chen Wang, Xiong Xiong, Yifeng Zheng, Linjie Wang, Shiyi Hao</div>
-          <div class="venue">International Conference on Natural Language Processing and Chinese Computing（NLPCC，EI）· 2023</div>
+          <div class="venue">International Conference on Natural Language Processing and Chinese Computing（NLPCC，CCF-C）· 2023</div>
+        </li>
+        <li>
+          <div class="pub-title">Enhance Document-Level Event Argument Extraction Through Text Diffusion and Event Argument Constraints</div>
+          <div class="pub-authors"><strong>Yunfei Liu</strong>, Yizhao Wang, Shiyi Hao, Shengyang Li</div>
+          <div class="venue">2025 IEEE 28th International Conference on Computer Supported Cooperative Work in Design（CSCWD，CCF-C）· 2025</div>
         </li>
         <li>
           <div class="pub-title">Explicit Sparse Attention Network for Multimodal Named Entity Recognition</div>
           <div class="pub-authors"><strong>Yunfei Liu</strong>, Shengyang Li, Feihu Hu, Anqi Liu, Yanan Liu</div>
           <div class="venue">China Conference on Knowledge Graph and Semantic Computing（CCKS，EI）· 2022</div>
         </li>
+        <li>
+          <div class="pub-title">EicDB: A Cloud Native Distributed Relational Database Based on Shared Storage</div>
+          <div class="pub-authors"><strong>Yunfei Liu</strong>, Shengyang Li, Yunziwei Deng, Chen Du</div>
+          <div class="venue">2025 the 8th International Conference on Software Engineering and Information Management（EI）· 2025</div>
+        </li>
+      </ul>
+      <div class="rank-label">第二及其他作者</div>
+      <ul class="pub-list">
         <li>
           <div class="pub-title">基于云平台的空间站工程空间应用地面数据系统技术</div>
           <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 于海军, 杜晨, 邓云紫微</div>
@@ -319,7 +345,12 @@
         <li>
           <div class="pub-title">基于云平台的空间站工程地面数据综合管理与服务系统</div>
           <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 于海军, 邓云紫微, 王博, 杨波</div>
-          <div class="venue">载人航天（中国科技核心期刊）· 2025</div>
+          <div class="venue">载人航天（中国科技核心期刊）· 2025 · 载人航天学术大会优秀论文</div>
+        </li>
+        <li>
+          <div class="pub-title">海量空间站任务数据的挖掘与分析系统技术研究</div>
+          <div class="pub-authors">邓云紫微, 李盛阳, <strong>刘云飞</strong>, 杨波, 刘安琪, 刘雅楠</div>
+          <div class="venue">载人航天（中文核心）· 2025</div>
         </li>
         <li>
           <div class="pub-title">数智驱动的空间科学实验研究：AI4S 范式下的新探索</div>
@@ -330,6 +361,11 @@
           <div class="pub-title">A Multi-Gate Encoder for Joint Entity and Relation Extraction</div>
           <div class="pub-authors">Xiong Xiong, <strong>Yunfei Liu</strong>, Anqi Liu, Shuai Gong, Shengyang Li</div>
           <div class="venue">China National Conference on Chinese Computational Linguistics（CCL，EI）· 2022</div>
+        </li>
+        <li>
+          <div class="pub-title">基于MRC动态数据生成的命名实体识别方法</div>
+          <div class="pub-authors">范西朋, <strong>刘云飞</strong>, 李盛阳, 郭威虎, 胡淼泊</div>
+          <div class="venue">中文信息学报（CCF-B 中文）· 2023</div>
         </li>
       </ul>
     </section>
@@ -347,11 +383,13 @@
 
     <section>
       <h2>代表性专利</h2>
+      <p class="venue" style="margin-bottom:12px;">授权国家发明 / 外观设计专利 13 项，列举如下</p>
+      <div class="rank-label">第一发明人</div>
       <ul class="patent-list">
         <li>
-          <div class="pub-title">航天工程业务运行日志管理与监控告警方法及系统（发明专利）</div>
-          <div class="pub-authors"><strong>刘云飞</strong>, 李盛阳, 杜晨, 邓云紫薇</div>
-          <div class="venue">专利号：ZL 2024 1 0492184.1 · 授权时间：2024-10</div>
+          <div class="pub-title">基于视觉语言预训练模型的细粒度多模态提示学习方法（发明专利）</div>
+          <div class="pub-authors"><strong>刘云飞</strong>, 李盛阳, 王驿钊</div>
+          <div class="venue">专利号：ZL 2024 1 1501689.6 · 授权时间：2025-10</div>
         </li>
         <li>
           <div class="pub-title">一种航天工程大数据挖掘与分析方法及系统（发明专利）</div>
@@ -359,14 +397,22 @@
           <div class="venue">专利号：ZL 2024 1 0184496.6 · 授权时间：2025-01</div>
         </li>
         <li>
-          <div class="pub-title">基于视觉语言预训练模型的细粒度多模态提示学习方法（发明专利）</div>
-          <div class="pub-authors"><strong>刘云飞</strong>, 李盛阳, 王驿钊</div>
-          <div class="venue">专利号：ZL 2024 1 1501689.6 · 授权时间：2025-10</div>
+          <div class="pub-title">航天工程业务运行日志管理与监控告警方法及系统（发明专利）</div>
+          <div class="pub-authors"><strong>刘云飞</strong>, 李盛阳, 杜晨, 邓云紫薇</div>
+          <div class="venue">专利号：ZL 2024 1 0492184.1 · 授权时间：2024-10</div>
         </li>
         <li>
-          <div class="pub-title">支持航天工程文件数据上传与全链路管理的方法及系统（发明专利）</div>
-          <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 杜晨</div>
-          <div class="venue">专利号：ZL 2023 1 1496431.7 · 授权时间：2024-09</div>
+          <div class="pub-title">用于电子设备的航天工程大数据知识图谱图形用户界面（外观设计专利）</div>
+          <div class="pub-authors"><strong>刘云飞</strong>, 李盛阳, 刘彦何</div>
+          <div class="venue">专利号：ZL 2023 3 0746378.6 · 授权时间：2024-07</div>
+        </li>
+      </ul>
+      <div class="rank-label">第二发明人</div>
+      <ul class="patent-list">
+        <li>
+          <div class="pub-title">一种航天工程天地实验数据对比可视化方法及系统（发明专利）</div>
+          <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 刘安琪, 邓云紫薇</div>
+          <div class="venue">专利号：ZL 2024 1 0492200.7 · 授权时间：2024-10</div>
         </li>
         <li>
           <div class="pub-title">一种支持航天工程大规模数据查询检索方法及系统（发明专利）</div>
@@ -374,14 +420,42 @@
           <div class="venue">专利号：ZL 2024 1 0184616.2 · 授权时间：2024-10</div>
         </li>
         <li>
+          <div class="pub-title">支持空间科学与应用数据质量分析和评价的方法及系统（发明专利）</div>
+          <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 杜晨, 周立杰, 李健华</div>
+          <div class="venue">专利号：ZL 2024 1 1438181.6 · 授权时间：2025-05</div>
+        </li>
+        <li>
+          <div class="pub-title">支持航天工程文件数据上传与全链路管理的方法及系统（发明专利）</div>
+          <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 杜晨</div>
+          <div class="venue">专利号：ZL 2023 1 1496431.7 · 授权时间：2024-09</div>
+        </li>
+        <li>
           <div class="pub-title">一种用于云平台与云上业务运行监控可视化的方法及系统（发明专利）</div>
           <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 杜晨</div>
           <div class="venue">专利号：ZL 2023 1 1606565.X · 授权时间：2024-07</div>
         </li>
         <li>
-          <div class="pub-title">支持空间科学与应用数据质量分析和评价的方法及系统（发明专利）</div>
-          <div class="pub-authors">李盛阳, <strong>刘云飞</strong>, 杜晨, 周立杰, 李健华</div>
-          <div class="venue">专利号：ZL 2024 1 1438181.6 · 授权时间：2025-05</div>
+          <div class="pub-title">空间高微重力下 MEMS 惯性传感器变化趋势预测方法及装置（发明专利）</div>
+          <div class="pub-authors">李盛阳, 刘雅楠, <strong>刘云飞</strong>, 李宗峰</div>
+          <div class="venue">专利号：ZL 2024 1 1157051.5 · 授权时间：2025-09</div>
+        </li>
+        <li>
+          <div class="pub-title">一种航天有效载荷旋转设备的故障预测方法和系统（发明专利）</div>
+          <div class="pub-authors">刘安琪, 李盛阳, <strong>刘云飞</strong>, 邓云紫微</div>
+          <div class="venue">专利号：ZL 2024 1 1672657.2 · 授权时间：2025-09</div>
+        </li>
+      </ul>
+      <div class="rank-label">第三发明人</div>
+      <ul class="patent-list">
+        <li>
+          <div class="pub-title">一种航天文本数据的中文实体和关系联合抽取方法、系统（发明专利）</div>
+          <div class="pub-authors">李盛阳, 熊雄, <strong>刘云飞</strong></div>
+          <div class="venue">专利号：ZL 2022 1 1419102.8 · 授权时间：2023-07</div>
+        </li>
+        <li>
+          <div class="pub-title">一种航天文本数据的实体识别与链接方法、系统（发明专利）</div>
+          <div class="pub-authors">李盛阳, 龚帅, <strong>刘云飞</strong></div>
+          <div class="venue">专利号：ZL 2022 1 0853365.3 · 授权时间：2023-06</div>
         </li>
       </ul>
     </section>
